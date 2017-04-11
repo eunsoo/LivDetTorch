@@ -1,0 +1,16 @@
+< Real vs. Fake >
+1) basic option : luajit main.lua -n 100 --eval --script -o "basicNetwork.t7"
+
+-- 2) Check that eval is run -- 
+luajit main.lua -n -1 -o "basicNetwork.t7"
+
+< Alive vs. Gelatin vs. Playdoh vs. Silicone >
+1) basic option : luajit main.lua -n -1 --cnn 150,200,300,350 -o "basicNetwork.t7" -no_bi
+
+
+
+
+< Test Module >
+1) Alive : luajit realImage_test.lua -f "Alive"
+			th -i realImage_test.lua -f "Alive"
+2) Gelatin : luajit realImage_test.lua -f "Gelatin"
